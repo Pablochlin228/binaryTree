@@ -19,7 +19,7 @@ public:
 	}
 	void Print()
 	{
-		cout << "Name: " << name << " Age: " << age << endl;
+		cout << "Age: " << age << " Name: " << name << endl;
 	}
 	void Init()
 	{
@@ -61,12 +61,6 @@ public:
 		return false;
 	}
 };
-
-ostream& operator << (ostream& os, Student obj)
-{
-	os << "Name: " << obj.GetName() << "\tAge: " << obj.GetAge() << endl;
-	return os;
-}
 
 typedef pair<Student, Student> mypair;
 
